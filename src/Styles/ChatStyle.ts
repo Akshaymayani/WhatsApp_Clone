@@ -1,0 +1,131 @@
+import {StyleSheet} from 'react-native';
+
+export const ChatStyle = () =>
+  StyleSheet.create({
+    chat_main: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: '#121B22',
+      borderBottomWidth: 3,
+      borderBottomColor: '#525c62',
+    },
+    chat_left: {
+      width: '20%',
+      height: '100%',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    chat_right: {
+      width: '80%',
+      height: '100%',
+      flexDirection: 'column',
+      padding: 6,
+    },
+    image: {
+      width: '75%',
+      height: '85%',
+      borderRadius: 100,
+    },
+    images: {
+      width: '100%',
+      height: '100%',
+      borderRadius: 100,
+    },
+    imagess: {
+      width: '100%',
+      height: '100%',
+      borderRadius: 100,
+      borderWidth: 3,
+      borderColor: '#2a6932',
+      // borderColor: '#28343C',
+    },
+    timer_image: {
+      width: '100%',
+      height: '100%',
+      borderRadius: 100,
+      color: '#687076',
+    },
+    chatdate: {
+      color: '#fff',
+      fontSize: 13,
+      marginRight: 5,
+      marginTop: 5,
+    },
+    status_main: {
+      width: '100%',
+      height: '100%',
+    },
+    status_text: {
+      color: '#fff',
+      fontSize: 13,
+      marginRight: 5,
+      marginTop: 5,
+    },
+    status_carousel: {
+      marginTop: 8,
+      padding: 5,
+      width: '100%',
+      height: 130,
+      flexDirection: 'row',
+    },
+    shadow_container: {
+      marginHorizontal: 10,
+      shadowColor: '#000',
+      shadowOffset: {
+        width: 0,
+        height: 3,
+      },
+      shadowOpacity: 0.5,
+      shadowRadius: 15,
+      elevation: 5,
+      overflow: 'visible',
+    },
+    channel_container: {
+      width: '100%',
+      height: 200,
+      borderWidth: 2,
+      borderColor: '#303B45',
+      backgroundColor: '#F3F4F6',
+      marginTop: 10,
+      borderRadius: 10,
+      padding: 12,
+      overflow: 'hidden',
+    },
+    channel_header: {
+      width: '100%',
+      height: '35%',
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
+      alignItems: 'center',
+    },
+    channel_image: {
+      width: 66,
+      height: 66,
+      justifyContent: 'center',
+      alignItems: 'flex-start',
+    },
+    channel_desc: {
+      width: '100%',
+      height: '55%',
+      // borderWidth: 5,
+      // borderColor: 'red',
+      paddingVertical: 7,
+      paddingHorizontal: 7,
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    desc_image: {
+      width: '20%',
+      height: '90%',
+    },
+    desc_text: {
+      marginRight: 4,
+    },
+    channel_footer: {
+      width: '100%',
+      height: '15%',
+      justifyContent: 'center',
+      paddingHorizontal: 7,
+    },
+  });

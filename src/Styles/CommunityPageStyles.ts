@@ -1,0 +1,117 @@
+import {Platform, StyleSheet, useWindowDimensions} from 'react-native';
+
+export const CommunityPageStyles = () => {
+  const {width} = useWindowDimensions();
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#FAF9F6',
+      paddingVertical: 4,
+      paddingHorizontal: 8,
+      position: 'relative',
+    },
+    header: {
+      fontSize: 18,
+      fontWeight: '600',
+      marginVertical: 10,
+    },
+    sectionHeader: {
+      fontSize: 16,
+      fontWeight: 'bold',
+      marginVertical: 8,
+    },
+    groupContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: '#fff',
+      padding: 12,
+      borderRadius: 8,
+      marginBottom: 8,
+      shadowColor: '#000',
+      shadowOffset: {width: 0, height: 2},
+      shadowOpacity: 0.1,
+      shadowRadius: 4,
+      elevation: 3,
+    },
+    groupText: {
+      flex: 1,
+      marginLeft: 12,
+    },
+    groupName: {
+      fontSize: 16,
+      fontWeight: '500',
+    },
+    lastMessage: {
+      fontSize: 12,
+      color: '#777',
+    },
+    unreadBadge: {
+      fontSize: 12,
+      color: '#fff',
+      backgroundColor: '#FF3B30',
+      paddingHorizontal: 8,
+      paddingVertical: 2,
+      borderRadius: 12,
+      overflow: 'hidden',
+    },
+    addGroupButton: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#28343C',
+      padding: 10,
+      borderRadius: 8,
+    },
+    addGroupText: {
+      fontSize: 16,
+      color: '#fff',
+      marginLeft: 8,
+    },
+    menuContainer: {
+      position: 'absolute',
+      justifyContent: 'flex-start',
+      // alignItems: 'center',
+      height: 250,
+      width,
+      top: 0,
+      left: 0,
+      backgroundColor: '#f3f6f4',
+      borderTopLeftRadius: 16,
+      borderTopRightRadius: 16,
+      padding: 12,
+      shadowColor: '#000',
+      shadowOffset: {width: 0, height: -2},
+      shadowOpacity: 0.2,
+      shadowRadius: 4,
+      elevation: 5,
+    },
+    menuOption: {
+      flex: 1,
+      width: '100%',
+      backgroundColor: '#FFF',
+      paddingVertical: Platform.OS === 'android' ? 12 : 12,
+      // paddingHorizontal: 12,
+      borderRadius: 12,
+      marginBottom: 4,
+      justifyContent: 'center',
+      shadowColor: '#000',
+      shadowOffset: {width: 0, height: 1},
+      shadowOpacity: 0.1,
+      shadowRadius: 2,
+      elevation: 2,
+    },
+    menuOptionText: {
+      fontSize: 17,
+      fontWeight: '600',
+      color: '#007AFF',
+      textAlign: 'center',
+    },
+    cancelOption: {
+      // backgroundColor: '#F9F9F9',
+    },
+    cancelOptionText: {
+      color: '#FF3B30',
+      fontWeight: '600',
+    },
+  });
+};
